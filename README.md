@@ -1,1 +1,2 @@
 # learnGitDeep
+is dev first

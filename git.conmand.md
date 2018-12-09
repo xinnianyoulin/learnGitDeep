@@ -1,8 +1,7 @@
-# git branch -a 查看所有分支
+# Git
 
-# git push origin --delete Chapater 可以删除远程分支Chapater
+# 创建版本库
 
-#创建版本库
 初始化一个Git仓库，使用git init命令。
 
 添加文件到Git仓库，分两步：
@@ -15,7 +14,7 @@
 
 如果git status告诉你有文件被修改过，用git diff可以查看修改内容。
 
-#版本控制
+# 版本控制
 
 HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id。
 
@@ -33,7 +32,7 @@ git checkout其实是用版本库里的版本替换工作区的版本，无论�
 
 命令git rm用于删除一个文件。如果一个文件已经被提交到版本库，那么你永远不用担心误删，但是要小心，你只能恢复文件到最新版本，你会丢失最近一次提交后你修改的内容。
 
-#远程版本库
+# 远程版本库
 
 要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
 
@@ -47,10 +46,11 @@ git checkout其实是用版本库里的版本替换工作区的版本，无论�
 
 Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快
 
-
 # 创建与合并分支
 
 查看分支：git branch
+
+查看所有分支 git branch -a
 
 创建分支：git branch <name>
 
@@ -61,6 +61,8 @@ Git支持多种协议，包括https，但通过ssh支持的原生git协议速度
 合并某分支到当前分支：git merge <name>
 
 删除分支：git branch -d <name>
+
+删除远程分支 git push origin --delete/-d <name>
 
 # 解决冲突
 
@@ -102,7 +104,7 @@ Git分支十分强大，在团队开发中应该充分应用。
 
 从远程抓取分支，使用git pull，如果有冲突，要先处理冲突
 
-# rebase
+# Rebase
 
 rebase操作可以把本地未push的分叉提交历史整理成直线；
 

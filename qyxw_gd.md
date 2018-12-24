@@ -35,3 +35,7 @@
 
     - 统计分析
         192.168.116.181:8080/#/statistics
+        
+ ```javascript
+ export default webApi
+ ```

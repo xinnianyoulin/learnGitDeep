@@ -6,10 +6,7 @@
 
 添加文件到Git仓库，分两步：
 
-使用命令
-```javascript
-git add <file>
-```
+使用命令```javascript git add <file>```
 ，注意，可反复多次使用，添加多个文件；
 
 使用命令```git commit -m <message>```，完成。

@@ -20,7 +20,7 @@ this.$imagePreview(options)
 
 > Array
 
-图片对象中src为预览实际地址，w、h为图片宽高
+图片对象中src为预览实际地址，w、h为图片宽高。
 PhotoSwipe 本身要求设置宽高，image-preview组件会对没有设置宽高的图片先加载再显示，可能会造成性能问题
 
 ```javascript
@@ -43,8 +43,6 @@ this.$imagePreview(images)
 
 > Object
 
-指定图片显示可以通过改变startPosition来实现
-
 ```javascript
 const options = {
   images: [], // 图片列表，格式同上
@@ -60,3 +58,4 @@ const options = {
 
 this.$imagePreview(options)
 ```
+ps：指定图片显示可以通过传入startPosition来实现

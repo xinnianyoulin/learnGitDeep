@@ -1,4 +1,4 @@
-# image-preview
+# 仿微信图片预览组件 image-preview
 
 ## 使用方式
 
@@ -16,11 +16,12 @@ Vue.use(ImagePreview)
 this.$imagePreview(options)
 ```
 
-`ps:options可以是一个图片对象数组`
-
-#### options
+### options
 
 > Array
+
+图片对象中src为预览实际地址，w、h为图片宽高
+PhotoSwipe 本身要求设置宽高，image-preview组件会对没有设置宽高的图片先加载再显示，可能会造成性能问题
 
 ```javascript
 const images = [
@@ -36,10 +37,13 @@ const images = [
     src: require('@/assets/img.jpg')
   }
 ]
+
 this.$imagePreview(images)
 ```
 
 > Object
+
+指定图片显示可以通过改变startPosition来实现
 
 ```javascript
 const options = {

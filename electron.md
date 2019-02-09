@@ -18,10 +18,10 @@ electron -v
 
 在已有项目的 dist 下新建 main.js 及 package.json 文件
 
-在 dist 下 git bush 或者 cmd 下输入命令
+在 dist 下 git bash 或者 cmd 下输入命令
 
 ```cmd
-electrong .
+electron .
 ```
 
 出现相应应用说明基本环境搭建完成
@@ -29,16 +29,14 @@ electrong .
 ## 打包成软件
 
 ```cmd
-cnpm i electron-builder -g
-cnpm i electron-package -g
-cnpm i core-js -g
+cnpm i electron-builder electron-package core-js -g
 ```
 
 `%LOCALAPPDATA%` : `C:\Users\Administrator\AppData\Local\electron-builder\cache\` (没有就目录下新建)
 
 将`electron-builder-binaries-winCodeSign-2.4.0.zip`解压至`%LOCALAPPDATA%`
 
-将`electron-v1.8.4-win32-x64`复制到`%LOCALAPPDATA%`
+将`electron-v1.8.4-win32-x64.zip`复制到`%LOCALAPPDATA%`
 
 > build
 
@@ -48,16 +46,16 @@ cnpm i core-js -g
 electron-builder --dir
 ```
 
-- .打包成 exe 的安装包（依赖 winCodeSign 和 nsis）
+- 打包成 exe 的安装包（依赖 winCodeSign 和 nsis）
 
 ```cmd
 electron-builder
 ```
 
-执行成功例图如
+> 执行成功例图如
 
-![]['./electron-builder.png']
+![](/electron-builder.png)
 
-## 附录
+### 附录
 
 文件下载国内源：`https://npm.taobao.org/mirrors/electron/`
